@@ -1,7 +1,7 @@
 spring:
   profiles:
     active:
-    - dev
+      - dev
 ---
 server:
   port: 8001
@@ -24,16 +24,16 @@ mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml
   type-aliases-package: com.atguigu.springcloud.entities
   mapper-locations:
-  - classpath:mybatis/mapper/**/*.xml
-  
-eureka: 
+    - classpath:mybatis/mapper/**/*.xml
+
+eureka:
   client: #客户端注册进eureka服务列表内
-    service-url: 
+    service-url:
       defaultZone: http://eureka7001.com:7001/eureka/
   instance:
     instance-id: dept-8001.com
     prefer-ip-address: true
-    
+
 info:
   app.name: atguigu-microservicecloud-springcloudconfig01
   company.name: www.atguigu.com
@@ -61,16 +61,16 @@ mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml
   type-aliases-package: com.atguigu.springcloud.entities
   mapper-locations:
-  - classpath:mybatis/mapper/**/*.xml
-  
-eureka: 
+    - classpath:mybatis/mapper/**/*.xml
+
+eureka:
   client: #客户端注册进eureka服务列表内
-    service-url: 
+    service-url:
       defaultZone: http://eureka7001.com:7001/eureka/
   instance:
     instance-id: dept-8001.com
     prefer-ip-address: true
-    
+
 info:
   app.name: atguigu-microservicecloud-springcloudconfig02
   company.name: www.atguigu.com
